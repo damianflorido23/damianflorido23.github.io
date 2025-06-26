@@ -1,25 +1,23 @@
 # 🌐 Portfolio Web – Damián Florido
 
-Este repositorio contiene mi portfolio como profesional en DevOps.
+Este repositorio contiene mi portfolio como profesional.
 
 ## 📄 Contenido del sitio
 - Presentación personal
 - Tecnologías y herramientas que manejo
-- Proyectos prácticos
 - CV en PDF y contacto profesional
 
 ## 🚀 Tecnologías destacadas
-- 🐧 Linux
-- 🐳 Docker & Compose
-- ☸️ Kubernetes
-- 🔄 CI/CD con GitLab
-- 📊 Monitorización con Grafana y Prometheus
-- 📦 Automatización con Bash
+- 💻 Sistemas Operativos
+- 🌐 Redes
+- 🛠️ Administración y scripting
+- 💾 Virtualización
+- 🔐 Ciberseguridad (Blue Team – en aprendizaje)
+- 🐳 DevOps (Junior)
 
 ## 🔗 Sitio en línea
 👉 Puedes verlo en: [https://damianflorido23.github.io](https://damianflorido23.github.io)
 
 ---
 
-💼 En busca de oportunidades como DevOps.  
 📬 Contacto: [damianflorido10@gmail.com](mailto:damianflorido10@gmail.com)
