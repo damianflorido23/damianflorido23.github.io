@@ -5,7 +5,7 @@ Este repositorio contiene mi portfolio como profesional.
 ## 📄 Contenido del sitio
 - Presentación personal
 - Tecnologías y herramientas que manejo
-- Proyectos en Github
+- Proyectos en GitHub
 - CV en PDF y contacto profesional
 
 ## 🚀 Tecnologías destacadas
