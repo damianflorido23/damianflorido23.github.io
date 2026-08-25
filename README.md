@@ -1,4 +1,4 @@
-# 🛡️ Cybersecurity Portfolio — Damián Florido
+# 🛡️ Portfolio de Ciberseguridad — Damián Florido
 
 Portfolio personal donde documento mi aprendizaje y proyectos prácticos relacionados con **Ciberseguridad**, con especialización en **Blue Team y SOC**.
 
@@ -8,11 +8,11 @@ Evolucionar profesionalmente desarrollando conocimientos y experiencia práctica
 
 ### 📂 Contenido
 
-* 👨‍💻 About Me
-* 🛡️ Projects
-* 🧪 Labs
-* 🎓 Certifications
-* 📫 Contact
+* 👨‍💻 Sobre mi
+* 🛡️ Proyectos
+* 🧪 Laboratorios
+* 🎓 Certificaciones
+* 📫 Contactos
 
 ---
 
