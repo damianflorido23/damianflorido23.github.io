@@ -4,7 +4,7 @@ Portfolio personal donde documento mi aprendizaje y proyectos prácticos relacio
 
 ### 🎯 Objetivo
 
-Evolucionar profesionalmente desde **soporte IT hacia Blue Team / SOC Analyst**, desarrollando conocimientos y experiencia práctica en ciberseguridad defensiva.
+Evolucionar profesionalmente desarrollando conocimientos y experiencia práctica en ciberseguridad defensiva.
 
 ### 📂 Contenido
 
