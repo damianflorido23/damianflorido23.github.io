@@ -1,24 +1,23 @@
-# 🌐 Portfolio Web – Damián Florido
+# 🛡️ Cybersecurity Portfolio — Damián Florido
 
-Este repositorio contiene mi portfolio como profesional.
+Portfolio personal donde documento mi aprendizaje y proyectos prácticos relacionados con **Ciberseguridad**, con especialización en **Blue Team y SOC**.
 
-## 📄 Contenido del sitio
-- Presentación personal
-- Tecnologías y herramientas que manejo
-- Proyectos en GitHub
-- CV en PDF y contacto profesional
+### 🎯 Objetivo
 
-## 🚀 Tecnologías destacadas
-- 💻 Sistemas Operativos
-- 🌐 Redes
-- 🛠️ Administración y scripting
-- 💾 Virtualización
-- 🔐 Ciberseguridad (Blue Team – en aprendizaje)
-- 🐳 DevOps (Junior)
+Evolucionar profesionalmente desde **soporte IT hacia Blue Team / SOC Analyst**, desarrollando conocimientos y experiencia práctica en ciberseguridad defensiva.
 
-## 🔗 Sitio en línea
-👉 Puedes verlo en: [https://damianflorido23.github.io](https://damianflorido23.github.io)
+### 📂 Contenido
+
+* 👨‍💻 About Me
+* 🛡️ Projects
+* 🧪 Labs
+* 🎓 Certifications
+* 📫 Contact
 
 ---
 
-📬 Contacto: [damianflorido10@gmail.com](mailto:damianflorido10@gmail.com)
+🌐 **[Ver Portfolio](https://damianflorido.github.io/)**
+
+💼 **[LinkedIn](https://www.linkedin.com/in/damianflorido/)**
+
+📬 **Contacto: [damianflorido10@gmail.com](mailto:damianflorido10@gmail.com)**
