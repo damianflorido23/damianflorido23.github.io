@@ -20,4 +20,4 @@ Evolucionar profesionalmente desarrollando conocimientos y experiencia práctica
 
 💼 **[LinkedIn](https://www.linkedin.com/in/damianflorido/)**
 
-📬 **Contacto: [damianflorido10@gmail.com](mailto:damianflorido10@gmail.com)**
+📬 **[damianflorido10@gmail.com](mailto:damianflorido10@gmail.com)**
