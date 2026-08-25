@@ -313,6 +313,91 @@
 
 
     /* =========================
+       LABS
+    ========================= */
+
+    .labs-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .lab-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 22px;
+
+        transition:
+            transform 0.2s ease,
+            border-color 0.2s ease,
+            background 0.2s ease;
+    }
+
+    .lab-card:hover {
+        transform: translateY(-3px);
+        border-color: var(--accent);
+        background: var(--surface-hover);
+    }
+
+    .lab-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 9px;
+    }
+
+    .lab-title h3 {
+        font-size: 1.08rem;
+    }
+
+    .lab-description {
+        color: var(--muted);
+        font-size: 0.88rem;
+        min-height: 58px;
+    }
+
+    .lab-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px solid var(--border);
+    }
+
+    .lab-stat {
+        text-align: center;
+    }
+
+    .lab-stat-number {
+        display: block;
+        color: var(--text);
+        font-size: 1.15rem;
+        font-weight: 700;
+    }
+
+    .lab-stat-label {
+        display: block;
+        color: var(--muted);
+        font-size: 0.68rem;
+        margin-top: 2px;
+    }
+
+    .lab-button {
+        display: inline-flex;
+        margin-top: 18px;
+        color: var(--accent);
+        font-size: 0.82rem;
+    }
+
+    .lab-button:hover {
+        text-decoration: underline;
+    }
+
+
+    /* =========================
        CERTIFICACIONES
     ========================= */
 
@@ -381,6 +466,14 @@
     /* =========================
        MÓVIL
     ========================= */
+
+    @media (max-width: 900px) {
+
+        .labs-grid {
+            grid-template-columns: 1fr;
+        }
+
+    }
 
     @media (max-width: 800px) {
 
@@ -647,90 +740,152 @@
             </h2>
 
             <p class="section-description">
-                Práctica mediante laboratorios de ciberseguridad
-                y entornos controlados.
+                Plataformas y entornos donde practico ciberseguridad.
             </p>
 
         </div>
 
 
-        <div class="grid">
+        <div class="labs-grid">
 
-            <article class="card">
 
-                <h3>
-                    🧪 Hack The Box
-                </h3>
+            <!-- HACK THE BOX -->
 
-                <p>
-                    Laboratorios prácticos y retos de ciberseguridad.
-                </p>
+            <article class="lab-card">
 
-                <div class="tags">
+                <div class="lab-title">
 
-                    <span class="tag">
-                        HTB
-                    </span>
-
-                    <span class="tag">
-                        Ciberseguridad
-                    </span>
+                    <h3>
+                        🧪 Hack The Box
+                    </h3>
 
                 </div>
+
+                <p class="lab-description">
+                    Máquinas y laboratorios enfocados en enumeración,
+                    explotación y escalada de privilegios.
+                </p>
+
+                <div class="lab-stats">
+
+                    <div class="lab-stat">
+                        <span class="lab-stat-number">--</span>
+                        <span class="lab-stat-label">Máquinas</span>
+                    </div>
+
+                    <div class="lab-stat">
+                        <span class="lab-stat-number">--</span>
+                        <span class="lab-stat-label">Linux</span>
+                    </div>
+
+                    <div class="lab-stat">
+                        <span class="lab-stat-number">--</span>
+                        <span class="lab-stat-label">Write-ups</span>
+                    </div>
+
+                </div>
+
+                <a
+                    href="labs/hackthebox.html"
+                    class="lab-button"
+                >
+                    Ver máquinas →
+                </a>
 
             </article>
 
 
-            <article class="card">
+            <!-- TRYHACKME -->
 
-                <h3>
-                    🧪 TryHackMe
-                </h3>
+            <article class="lab-card">
 
-                <p>
-                    Rutas de aprendizaje y laboratorios prácticos
-                    de seguridad informática.
-                </p>
+                <div class="lab-title">
 
-                <div class="tags">
-
-                    <span class="tag">
-                        TryHackMe
-                    </span>
-
-                    <span class="tag">
-                        Formación
-                    </span>
+                    <h3>
+                        🧪 TryHackMe
+                    </h3>
 
                 </div>
+
+                <p class="lab-description">
+                    Rutas y laboratorios de seguridad orientados
+                    al aprendizaje práctico.
+                </p>
+
+                <div class="lab-stats">
+
+                    <div class="lab-stat">
+                        <span class="lab-stat-number">--</span>
+                        <span class="lab-stat-label">Labs</span>
+                    </div>
+
+                    <div class="lab-stat">
+                        <span class="lab-stat-number">--</span>
+                        <span class="lab-stat-label">Rutas</span>
+                    </div>
+
+                    <div class="lab-stat">
+                        <span class="lab-stat-number">--</span>
+                        <span class="lab-stat-label">Write-ups</span>
+                    </div>
+
+                </div>
+
+                <a
+                    href="labs/tryhackme.html"
+                    class="lab-button"
+                >
+                    Ver laboratorios →
+                </a>
 
             </article>
 
 
-            <article class="card">
+            <!-- DOCKERLABS -->
 
-                <h3>
-                    🧪 DockerLabs
-                </h3>
+            <article class="lab-card">
 
-                <p>
-                    Entornos controlados para practicar
-                    ciberseguridad.
-                </p>
+                <div class="lab-title">
 
-                <div class="tags">
-
-                    <span class="tag">
-                        Docker
-                    </span>
-
-                    <span class="tag">
-                        Labs
-                    </span>
+                    <h3>
+                        🧪 DockerLabs
+                    </h3>
 
                 </div>
 
+                <p class="lab-description">
+                    Máquinas vulnerables en entornos controlados
+                    para practicar ciberseguridad.
+                </p>
+
+                <div class="lab-stats">
+
+                    <div class="lab-stat">
+                        <span class="lab-stat-number">--</span>
+                        <span class="lab-stat-label">Máquinas</span>
+                    </div>
+
+                    <div class="lab-stat">
+                        <span class="lab-stat-number">--</span>
+                        <span class="lab-stat-label">Linux</span>
+                    </div>
+
+                    <div class="lab-stat">
+                        <span class="lab-stat-number">--</span>
+                        <span class="lab-stat-label">Write-ups</span>
+                    </div>
+
+                </div>
+
+                <a
+                    href="labs/dockerlabs.html"
+                    class="lab-button"
+                >
+                    Ver máquinas →
+                </a>
+
             </article>
+
 
         </div>
 
@@ -898,6 +1053,7 @@
     </div>
 
 </footer>
+```
 
 </body>
 </html>
