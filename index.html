@@ -1,15 +1,554 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Damián Florido | Cybersecurity Portfolio</title>
+
+<meta name="description"
+      content="Portfolio de Damián Florido — Cybersecurity, Blue Team y SOC Analyst.">
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0d1117;
+        color: #e6edf3;
+        line-height: 1.6;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    /* NAVBAR */
+
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(13, 17, 23, 0.95);
+        border-bottom: 1px solid #21262d;
+        z-index: 1000;
+    }
+
+    .nav-container {
+        max-width: 1100px;
+        margin: auto;
+        padding: 18px 20px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-weight: bold;
+    }
+
+    .logo span {
+        color: #58a6ff;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+
+    nav a {
+        color: #8b949e;
+        font-size: 0.9rem;
+    }
+
+    nav a:hover {
+        color: #58a6ff;
+    }
+
+    /* GENERAL */
+
+    .container {
+        width: min(1050px, 90%);
+        margin: auto;
+    }
+
+    section {
+        padding: 100px 0;
+        border-bottom: 1px solid #21262d;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 35px;
+    }
+
+    /* HERO */
+
+    #home {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .hero {
+        max-width: 800px;
+    }
+
+    .hero-label {
+        color: #58a6ff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: clamp(3rem, 8vw, 5rem);
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+        color: #8b949e;
+        margin-bottom: 25px;
+    }
+
+    .hero-description {
+        max-width: 700px;
+        color: #8b949e;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        padding: 11px 20px;
+        border: 1px solid #30363d;
+        border-radius: 6px;
+        transition: 0.2s;
+    }
+
+    .button:hover {
+        border-color: #58a6ff;
+        color: #58a6ff;
+    }
+
+    /* ABOUT */
+
+    .about {
+        max-width: 800px;
+        color: #8b949e;
+        font-size: 1.05rem;
+    }
+
+    /* CARDS */
+
+    .grid {
+        display: grid;
+        grid-template-columns:
+            repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #161b22;
+        border: 1px solid #21262d;
+        border-radius: 8px;
+        padding: 25px;
+        transition: 0.2s;
+    }
+
+    .card:hover {
+        border-color: #58a6ff;
+        transform: translateY(-3px);
+    }
+
+    .card h3 {
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        color: #8b949e;
+    }
+
+    .tag {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 5px 9px;
+        border: 1px solid #30363d;
+        border-radius: 4px;
+        color: #8b949e;
+        font-size: 0.8rem;
+    }
+
+    /* CERTIFICATIONS */
+
+    .status {
+        margin-top: 12px;
+        color: #d29922;
+        font-size: 0.9rem;
+    }
+
+    /* CONTACT */
+
+    .contact {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    /* FOOTER */
+
+    footer {
+        padding: 35px 0;
+        color: #8b949e;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+        nav ul {
+            gap: 12px;
+        }
+
+        nav a {
+            font-size: 0.75rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+    }
+
+</style>
+```
+
 </head>
 
 <body>
 
-    <h1>Hola mundo</h1>
+<!-- NAVIGATION -->
 
-    <p>Mi portfolio de ciberseguridad.</p>
+<nav>
+    <div class="nav-container">
+
+```
+    <div class="logo">
+        Damián<span>.</span>
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#labs">Labs</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+</div>
+```
+
+</nav>
+
+<!-- HOME -->
+
+<section id="home">
+
+```
+<div class="container">
+
+    <div class="hero">
+
+        <div class="hero-label">
+            Cybersecurity Portfolio
+        </div>
+
+        <h1>
+            Damián Florido
+        </h1>
+
+        <div class="hero-subtitle">
+            Cybersecurity · Blue Team · SOC
+        </div>
+
+        <p class="hero-description">
+            Portfolio personal donde documento mi aprendizaje,
+            laboratorios y proyectos prácticos relacionados con
+            ciberseguridad defensiva.
+        </p>
+
+        <div class="buttons">
+
+            <a class="button"
+               href="https://www.linkedin.com/in/damianflorido/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+            <a class="button"
+               href="https://github.com/"
+               target="_blank">
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+```
+<div class="container">
+
+    <h2>👨‍💻 About Me</h2>
+
+    <p class="about">
+
+        Soy Técnico Superior en Administración de Sistemas Informáticos
+        en Red (ASIR) y actualmente trabajo como técnico de soporte IT.
+
+        Estoy orientando mi carrera hacia la Ciberseguridad,
+        especializándome principalmente en Blue Team y SOC.
+
+        Actualmente estoy preparando CompTIA Security+ y Blue Team
+        Level 1 (BTL1), mientras complemento mi formación con
+        laboratorios y práctica.
+
+    </p>
+
+</div>
+```
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+```
+<div class="container">
+
+    <h2>🛡️ Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h3>Próximamente</h3>
+
+            <p>
+                Aquí iré incorporando proyectos prácticos de
+                ciberseguridad y Blue Team.
+            </p>
+
+            <span class="tag">
+                Blue Team
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- LABS -->
+
+<section id="labs">
+
+```
+<div class="container">
+
+    <h2>🧪 Labs</h2>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h3>Hack The Box</h3>
+
+            <p>
+                Laboratorios prácticos para desarrollar
+                conocimientos de ciberseguridad.
+            </p>
+
+            <span class="tag">
+                HTB
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>TryHackMe</h3>
+
+            <p>
+                Laboratorios y aprendizaje práctico
+                sobre seguridad informática.
+            </p>
+
+            <span class="tag">
+                TryHackMe
+            </span>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>DockerLabs</h3>
+
+            <p>
+                Entornos controlados para practicar
+                ciberseguridad.
+            </p>
+
+            <span class="tag">
+                Docker
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+```
+<div class="container">
+
+    <h2>🎓 Certifications</h2>
+
+    <div class="grid">
+
+        <div class="card">
+
+            <h3>CompTIA Security+</h3>
+
+            <p>
+                Certificación orientada a construir una base
+                sólida en ciberseguridad.
+            </p>
+
+            <div class="status">
+                🟡 En preparación
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Blue Team Level 1 (BTL1)</h3>
+
+            <p>
+                Certificación práctica orientada a
+                Blue Team y operaciones de seguridad.
+            </p>
+
+            <div class="status">
+                🟡 En preparación
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+```
+<div class="container">
+
+    <h2>📫 Contact</h2>
+
+    <p class="about">
+        ¿Quieres contactar conmigo o conocer más sobre mi trayectoria?
+    </p>
+
+    <div class="buttons">
+
+        <a class="button"
+           href="https://www.linkedin.com/in/damianflorido/"
+           target="_blank">
+            LinkedIn
+        </a>
+
+        <a class="button"
+           href="https://github.com/"
+           target="_blank">
+            GitHub
+        </a>
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+```
+<div class="container">
+
+    © 2026 Damián Florido · Cybersecurity Portfolio
+
+</div>
+```
+
+</footer>
 
 </body>
 </html>
